@@ -52,12 +52,12 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Publications</heading>
+              <heading>Research</heading>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
+        
         <tr onmouseout="scoop_stop()" onmouseover="scoop_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
@@ -105,7 +105,6 @@
           </td>
         </tr>
 
-
         <tr onmouseout="highlighter_stop()" onmouseover="highlighter_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
@@ -151,7 +150,6 @@
           </td>
         </tr>
 
-
         <tr onmouseout="geocode_stop()" onmouseover="geocode_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
@@ -194,7 +192,96 @@
             <a href="https://github.com/threedle/GeoCode">code</a>
             <p></p>
             <p>
-              We construct a procedural program with an interpretable parameter space to recover a high quality and easily manipulated mesh from a point cloud or a sketch input.
+              We build a procedural program with an interpretable parameter space to recover a high quality and easily manipulated mesh from a point cloud or a sketch input.
+            </p>
+          </td>
+        </tr>
+
+        <tr onmouseout="dpc_stop()" onmouseover="dpc_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='dpc_image'><video  width=100% height=100% muted autoplay loop>
+              <source src="images/human.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video></div>
+              <img src='images/human.png' width="160">
+            </div>
+            <script type="text/javascript">
+              function dpc_start() {
+                document.getElementById('dpc_image').style.opacity = "1";
+              }
+
+              function dpc_stop() {
+                document.getElementById('dpc_image').style.opacity = "0";
+              }
+              dpc_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://github.com/dvirginz/DPC">
+              <papertitle>DPC: Unsupervised Deep Point Correspondence via Cross and Self Construction</papertitle>
+            </a>
+            <br>
+            <strong>Itai Lang*</strong>,
+            <a href="https://scholar.google.com/citations?user=VGWubxYAAAAJ&hl=en">Dvir Ginzburg*</a>,
+            <a href="http://www.eng.tau.ac.il/~avidan/">Shai Avidan</a>,
+            <a href="https://www.raviv.sites.tau.ac.il/">Dan Raviv</a>
+            <br>
+            (*Equal contribution)
+            <br>
+            <em>3DV</em>, 2021
+            <br>
+            <a href="https://arxiv.org/abs/2110.08636">arXiv</a>
+            /
+            <a href="https://slideslive.com/38972252/dpc-unsupervised-deep-point-correspondence-via-cross-and-self-construction">video</a>
+            /
+            <a href="https://github.com/dvirginz/DPC">code</a>
+            <p></p>
+            <p>
+              We use latent similarity and the point coordinates themselves to construct one point cloud by the other and achive an accurate dense matching with a small training data amount and without any correspondence supervision.
+            </p>
+          </td>
+        </tr>
+
+        <tr onmouseout="geoadv_stop()" onmouseover="geoadv_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='geoadv_image'><video  width=100% height=100% muted autoplay loop>
+              <source src="images/pc_attack.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video></div>
+              <img src='images/pc_attack.png' width="160">
+            </div>
+            <script type="text/javascript">
+              function geoadv_start() {
+                document.getElementById('geoadv_image').style.opacity = "1";
+              }
+
+              function geoadv_stop() {
+                document.getElementById('geoadv_image').style.opacity = "0";
+              }
+              geoadv_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://github.com/itailang/geometric_adv">
+              <papertitle>Geometric Adversarial Attacks and Defenses on 3D Point Clouds</papertitle>
+            </a>
+            <br>
+            <strong>Itai Lang</strong>,
+            <a href="https://il.linkedin.com/in/uri-kotlicki-874b5837">Uriel Kotlicki</a>,
+            <a href="http://www.eng.tau.ac.il/~avidan/">Shai Avidan</a>
+            <br>
+            <em>3DV</em>, 2021
+            <br>
+            <a href="https://arxiv.org/abs/2012.05657">arXiv</a>
+            /
+            <a href="https://slideslive.com/38972228/geometric-adversarial-attacks-and-defenses-on-3d-point-clouds">video</a>
+            /
+            <a href="https://github.com/itailang/geometric_adv">code</a>
+            <p></p>
+            <p>
+              We perturb an input point cloud to attack an autoencoder model and change the reconstructed geometry to a different selected target shape.
             </p>
           </td>
         </tr>
@@ -317,5 +404,4 @@
     </tr>
   </table>
 </body>
-
 </html>
