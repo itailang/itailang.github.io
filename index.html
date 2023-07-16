@@ -58,6 +58,51 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
         
+        <tr onmouseout="saga_stop()" onmouseover="saga_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='saga_image'><video  width=100% height=100% muted autoplay loop>
+              <source src="images/saga_evolution.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video></div>
+              <img src='images/saga_evolution.png' width="160">
+            </div>
+            <script type="text/javascript">
+              function saga_start() {
+                document.getElementById('saga_image').style.opacity = "1";
+              }
+
+              function saga_stop() {
+                document.getElementById('saga_image').style.opacity = "0";
+              }
+              saga_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://stoliktomer.github.io/SAGA/">
+              <papertitle>SAGA: Spectral Geometric Adversarial Attack on 3D Meshes</papertitle>
+            </a>
+            <br>            
+            <a href="https://il.linkedin.com/in/tomer-stolik-3587b6181">Tomer Stolik*</a>,
+            <strong>Itai Lang*</strong>,
+            <a href="http://www.eng.tau.ac.il/~avidan/">Shai Avidan</a>
+            <br>
+            (*Equal contribution)
+            <br>
+            <em>ICCV</em>, 2023
+            <br>
+            <a href="https://stoliktomer.github.io/SAGA/">project page</a>
+            /
+            <a href="https://arxiv.org/abs/2211.13775">arXiv</a>
+            /
+            <a href="https://github.com/StolikTomer/SAGA">code</a>
+            <p></p>
+            <p>
+              We apply a low frequency perturbation in the spectral shape domain to alter the reconstruction by a victim mesh autoencoder to a desired output geometry.
+            </p>
+          </td>
+        </tr>
+        
         <tr onmouseout="scoop_stop()" onmouseover="scoop_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
@@ -193,51 +238,6 @@
             <p></p>
             <p>
               We build a procedural program with an interpretable parameter space to recover a high quality and easily manipulated mesh from a point cloud or a sketch input.
-            </p>
-          </td>
-        </tr>
-
-        <tr onmouseout="saga_stop()" onmouseover="saga_start()">
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <div class="one">
-              <div class="two" id='saga_image'><video  width=100% height=100% muted autoplay loop>
-              <source src="images/saga_evolution.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video></div>
-              <img src='images/saga_evolution.png' width="160">
-            </div>
-            <script type="text/javascript">
-              function saga_start() {
-                document.getElementById('saga_image').style.opacity = "1";
-              }
-
-              function saga_stop() {
-                document.getElementById('saga_image').style.opacity = "0";
-              }
-              saga_stop()
-            </script>
-          </td>
-          <td style="padding:20px;width:75%;vertical-align:middle">
-            <a href="https://stoliktomer.github.io/SAGA/">
-              <papertitle>SAGA: Spectral Geometric Adversarial Attack on 3D Meshes</papertitle>
-            </a>
-            <br>            
-            <a href="https://il.linkedin.com/in/tomer-stolik-3587b6181">Tomer Stolik*</a>,
-            <strong>Itai Lang*</strong>,
-            <a href="http://www.eng.tau.ac.il/~avidan/">Shai Avidan</a>
-            <br>
-            (*Equal contribution)
-            <br>
-            <em>arXiv</em>, 2022
-            <br>
-            <a href="https://stoliktomer.github.io/SAGA/">project page</a>
-            /
-            <a href="https://arxiv.org/abs/2211.13775">arXiv</a>
-            /
-            <a href="https://github.com/StolikTomer/SAGA">code</a>
-            <p></p>
-            <p>
-              We apply a low frequency perturbation in the spectral shape domain to alter the reconstruction by a victim mesh autoencoder to a desired output geometry.
             </p>
           </td>
         </tr>
