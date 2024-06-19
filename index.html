@@ -57,7 +57,53 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-        
+
+        <tr onmouseout="paintbrush_stop()" onmouseover="paintbrush_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='paintbrush_image'><video  width=100% height=100% muted autoplay loop>
+              <source src="images/paintbrush.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video></div>
+              <img src='images/paintbrush.png' width="160">
+            </div>
+            <script type="text/javascript">
+              function paintbrush_start() {
+                document.getElementById('paintbrush_image').style.opacity = "1";
+              }
+  
+              function paintbrush_stop() {
+                document.getElementById('paintbrush_image').style.opacity = "0";
+              }
+              paintbrush_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://threedle.github.io/3d-paintbrush/">
+              <papertitle>3D Paintbrush: Local Stylization of 3D Shapes with Cascaded Score Distillation</papertitle>
+            </a>
+            <br>
+            <a href="https://ddecatur.github.io/">Dale Decatur</a>,
+            <strong>Itai Lang</strong>,
+            <a href="https://kfiraberman.github.io/">Kfir Aberman</a>,
+            <a href="https://people.cs.uchicago.edu/~ranahanocka/">Rana Hanocka</a>
+            <br>
+            <em>CVPR</em> 2024
+            <br>
+            <a href="https://threedle.github.io/3d-paintbrush/">project page</a>
+            /
+            <a href="https://arxiv.org/abs/2311.09571">arXiv</a>
+            /
+            <a href="https://youtu.be/OKPySDDCdd0">video</a>
+            /
+            <a href="https://github.com/threedle/3d-paintbrush">code</a>
+            <p></p>
+            <p>
+              We generate precise localizations and highly detailed local textures on 3D shapes using text guidance.
+            </p>
+          </td>
+        </tr>
+
         <tr onmouseout="saga_stop()" onmouseover="saga_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
@@ -82,14 +128,14 @@
             <a href="https://stoliktomer.github.io/SAGA/">
               <papertitle>SAGA: Spectral Geometric Adversarial Attack on 3D Meshes</papertitle>
             </a>
-            <br>            
+            <br>
             <a href="https://il.linkedin.com/in/tomer-stolik-3587b6181">Tomer Stolik*</a>,
             <strong>Itai Lang*</strong>,
             <a href="http://www.eng.tau.ac.il/~avidan/">Shai Avidan</a>
             <br>
             (*Equal contribution)
             <br>
-            <em>ICCV</em>, 2023
+            <em>ICCV</em> 2023
             <br>
             <a href="https://stoliktomer.github.io/SAGA/">project page</a>
             /
@@ -134,7 +180,7 @@
             <a href="http://www.eng.tau.ac.il/~avidan/">Shai Avidan</a>,
             <a href="http://people.csail.mit.edu/mrub/">Michael Rubinstein</a>
             <br>
-            <em>CVPR</em>, 2023
+            <em>CVPR</em> 2023
             <br>
             <a href="https://itailang.github.io/SCOOP/">project page</a>
             /
@@ -179,7 +225,7 @@
             <strong>Itai Lang</strong>,
             <a href="https://people.cs.uchicago.edu/~ranahanocka/">Rana Hanocka</a>
             <br>
-            <em>CVPR</em>, 2023 <font color="red"><strong>(Highlight Presentation)</strong></font>
+            <em>CVPR</em> 2023 <font color="red"><strong>(Highlight Presentation)</strong></font>
             <br>
             <a href="https://threedle.github.io/3DHighlighter/">project page</a>
             /
@@ -227,7 +273,7 @@
             <br>
             (*Equal contribution)
             <br>
-            <em>3DV</em>, 2021
+            <em>3DV</em> 2021
             <br>
             <a href="https://arxiv.org/abs/2110.08636">arXiv</a>
             /
@@ -270,7 +316,7 @@
             <a href="https://il.linkedin.com/in/uri-kotlicki-874b5837">Uriel Kotlicki</a>,
             <a href="http://www.eng.tau.ac.il/~avidan/">Shai Avidan</a>
             <br>
-            <em>3DV</em>, 2021
+            <em>3DV</em> 2021
             <br>
             <a href="https://arxiv.org/abs/2012.05657">arXiv</a>
             /
@@ -313,7 +359,7 @@
             <a href="https://www.linkedin.com/in/asaf-manor-446979101/">Asaf Manor</a>,
             <a href="http://www.eng.tau.ac.il/~avidan/">Shai Avidan</a>
             <br>
-            <em>CVPR</em>, 2020 <font color="red"><strong>(Oral Presentation)</strong></font>
+            <em>CVPR</em> 2020 <font color="red"><strong>(Oral Presentation)</strong></font>
             <br>
             <a href="https://arxiv.org/abs/1912.03663">arXiv</a>
             /
@@ -358,7 +404,7 @@
             <br>
             (*Equal contribution)
             <br>
-            <em>CVPR</em>, 2019
+            <em>CVPR</em> 2019
             <br>
             <a href="https://arxiv.org/abs/1812.01659">arXiv</a>
             /
@@ -381,7 +427,9 @@
       <table width="100%" align="center" border="0" cellpadding="20"><tbody>
         <tr>
           <td width="100%" valign="center">
-            Reviewer for CVPR 2020, SIGGRAPH 2022, CVPR 2023 (<a href="docs/outstanding_reviewer_cvpr_2023.pdf">Outstanding Reviewer</a>), SIGGRAPH Asia 2023.
+            Poster Juror for SIGGRAPH 2024
+            <br><br>
+            Reviewer for CVPR 2020, SIGGRAPH 2022, CVPR 2023 (<a href="docs/outstanding_reviewer_cvpr_2023.pdf">Outstanding Reviewer</a>), SIGGRAPH Asia 2023. CVPR 2024, SIGGRAPH 2024.
             <br><br>
             Reviewer for TPAMI, TVCG, TCSVT, CAG.
           </td>
