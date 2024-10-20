@@ -57,6 +57,51 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        
+        <tr onmouseout="iseg_stop()" onmouseover="iseg_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='iseg_image'><video  width=100% height=100% muted autoplay loop>
+              <source src="images/iseg.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video></div>
+              <img src='images/iseg.png' width="160">
+            </div>
+            <script type="text/javascript">
+              function iseg_start() {
+                document.getElementById('iseg_image').style.opacity = "1";
+              }
+  
+              function iseg_stop() {
+                document.getElementById('iseg_image').style.opacity = "0";
+              }
+              iseg_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://threedle.github.io/iSeg/">
+              <papertitle>iSeg: Interactive 3D Segmentation via Interactive Attention</papertitle>
+            </a>
+            <br>
+            <strong>Itai Lang</strong>,
+            <a href="https://astrophysics.uchicago.edu/people/profile/fei-xu/">Fei Xu</a>,
+            <a href="https://ddecatur.github.io/">Dale Decatur</a>,
+            <a href="https://people.cs.uchicago.edu/~sudarshan/">Sudarshan Babu</a>,
+            <a href="https://people.cs.uchicago.edu/~ranahanocka/">Rana Hanocka</a>
+            <br>
+            <em>SIGGRAPH Asia</em> 2024
+            <br>
+            <a href="https://threedle.github.io/iSeg/">project page</a>
+            /
+            <a href="https://arxiv.org/abs/2404.03219">arXiv</a>
+            /
+            <a href="https://github.com/threedle/iSeg">code</a>
+            <p></p>
+            <p>
+              We propose an interactive segmentation technique for 3D shapes that produces fine-grained customized segmentations based on user clicks.
+            </p>
+          </td>
+        </tr>
 
         <tr onmouseout="paintbrush_stop()" onmouseover="paintbrush_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
