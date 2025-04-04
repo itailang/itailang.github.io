@@ -102,7 +102,53 @@
             </p>
           </td>
         </tr>
+
+        <tr onmouseout="meshup_stop()" onmouseover="meshup_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='meshup_image'><video width=100% height=100% muted autoplay loop>
+              <source src="images/meshup.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video></div>
+              <img src='images/meshup.png' width="160">
+            </div>
+            <script type="text/javascript">
+              function meshup_start() {
+                document.getElementById('meshup_image').style.opacity = "1";
+              }
   
+              function meshup_stop() {
+                document.getElementById('meshup_image').style.opacity = "0";
+              }
+              meshup_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://threedle.github.io/MeshUp/">
+              <papertitle>MeshUp: Multi-Target Mesh Deformation via Blended Score Distillation</papertitle>
+            </a>
+            <br>
+            <a href="https://hywkim-brian.github.io/site/">Hyunwoo Kim</a>,
+            <strong>Itai Lang</strong>,
+            <a href="https://imagine.enpc.fr/~groueixt/">Thibault Groueix</a>,
+            <a href="https://noamaig.github.io/">Noam Aigerman</a>,
+            <a href="http://www.vovakim.com/">Vladimir G. Kim</a>,
+            <a href="https://people.cs.uchicago.edu/~ranahanocka/">Rana Hanocka</a>
+            <br>
+            <em>3DV</em> 2025 <font color="red"><strong>(Best Paper Honorable Mention)</strong></font>
+            <br>
+            <a href="https://threedle.github.io/MeshUp/">project page</a>
+            /
+            <a href="https://arxiv.org/abs/2408.14899">arXiv</a>
+            /
+            <a href="https://github.com/threedle/MeshUp">code</a>
+            <p></p>
+            <p>
+              MeshUp deforms a 3D mesh into multiple concepts spcified by text, images, or another meshes, while enabling to control the strength and location of their manifestation.
+            </p>
+          </td>
+        </tr>
+
         <tr onmouseout="iseg_stop()" onmouseover="iseg_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
@@ -194,51 +240,98 @@
           </td>
         </tr>
 
-        <tr onmouseout="saga_stop()" onmouseover="saga_start()">
+        <tr onmouseout="geocode_stop()" onmouseover="geocode_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
-              <div class="two" id='saga_image'><video  width=100% height=100% muted autoplay loop>
-              <source src="images/saga_evolution.mp4" type="video/mp4">
+              <div class="two" id='geocode_image'><video  width=100% height=100% muted autoplay loop>
+              <source src="images/chair.mp4" type="video/mp4">
               Your browser does not support the video tag.
               </video></div>
-              <img src='images/saga_evolution.png' width="160">
+              <img src='images/chair.png' width="160">
             </div>
             <script type="text/javascript">
-              function saga_start() {
-                document.getElementById('saga_image').style.opacity = "1";
+              function geocode_start() {
+                document.getElementById('geocode_image').style.opacity = "1";
               }
 
-              function saga_stop() {
-                document.getElementById('saga_image').style.opacity = "0";
+              function geocode_stop() {
+                document.getElementById('geocode_image').style.opacity = "0";
               }
-              saga_stop()
+              geocode_stop()
             </script>
           </td>
           <td style="padding:20px;width:75%;vertical-align:middle">
-            <a href="https://stoliktomer.github.io/SAGA/">
-              <papertitle>SAGA: Spectral Geometric Adversarial Attack on 3D Meshes</papertitle>
+            <a href="https://threedle.github.io/GeoCode/">
+              <papertitle>GeoCode: Interpretable Shape Programs</papertitle>
             </a>
             <br>
-            <a href="https://il.linkedin.com/in/tomer-stolik-3587b6181">Tomer Stolik*</a>,
-            <strong>Itai Lang*</strong>,
-            <a href="http://www.eng.tau.ac.il/~avidan/">Shai Avidan</a>
+            <a href="https://il.linkedin.com/in/ofekpearl">Ofek Pearl</a>,
+            <strong>Itai Lang</strong>,
+            <a href="https://yuhuahu310.github.io/">Kate Hu</a>,
+            <a href="https://raymond-yeh.com/">Raymond A. Yeh</a>,
+            <a href="https://people.cs.uchicago.edu/~ranahanocka/">Rana Hanocka</a>
             <br>
-            (*Equal contribution)
+            <em>Computer Graphics Forum</em>, 2024
             <br>
-            <em>ICCV</em> 2023
-            <br>
-            <a href="https://stoliktomer.github.io/SAGA/">project page</a>
+            <a href="https://threedle.github.io/GeoCode/">project page</a>
             /
-            <a href="https://arxiv.org/abs/2211.13775">arXiv</a>
+            <a href="https://arxiv.org/abs/2212.11715">arXiv</a>
             /
-            <a href="https://github.com/StolikTomer/SAGA">code</a>
+            <a href="https://www.youtube.com/watch?v=VDufFcVIOzM">video</a>
+            /
+            <a href="https://github.com/threedle/GeoCode">code</a>
             <p></p>
             <p>
-              We apply a low frequency perturbation in the spectral shape domain to alter the reconstruction by a victim mesh autoencoder to a desired output geometry.
+              We build a procedural program with an interpretable parameter space to recover a high quality and easily manipulated mesh from a point cloud or a sketch input.
             </p>
           </td>
         </tr>
-        
+
+        <tr onmouseout="highlighter_stop()" onmouseover="highlighter_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='highlighter_image'><video  width=100% height=100% muted autoplay loop>
+              <source src="images/person_necklace.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video></div>
+              <img src='images/person.png' width="160">
+            </div>
+            <script type="text/javascript">
+              function highlighter_start() {
+                document.getElementById('highlighter_image').style.opacity = "1";
+              }
+
+              function highlighter_stop() {
+                document.getElementById('highlighter_image').style.opacity = "0";
+              }
+              highlighter_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://threedle.github.io/3DHighlighter/">
+              <papertitle>3D Highlighter: Localizing Regions on 3D Shapes via Text Descriptions</papertitle>
+            </a>
+            <br>
+            <a href="https://ddecatur.github.io/">Dale Decatur</a>,
+            <strong>Itai Lang</strong>,
+            <a href="https://people.cs.uchicago.edu/~ranahanocka/">Rana Hanocka</a>
+            <br>
+            <em>CVPR</em> 2023 <font color="red"><strong>(Highlight Presentation)</strong></font>
+            <br>
+            <a href="https://threedle.github.io/3DHighlighter/">project page</a>
+            /
+            <a href="https://arxiv.org/abs/2212.11263">arXiv</a>
+            /
+            <a href="https://www.youtube.com/watch?v=OKPySDDCdd0">video</a>
+            /
+            <a href="https://github.com/threedle/3DHighlighter">code</a>
+            <p></p>
+            <p>
+              We synthesize colors over a 3D shape and use CLIP supervision to localize semantic regions using open vocabulary text prompts.
+            </p>
+          </td>
+        </tr>
+
         <tr onmouseout="scoop_stop()" onmouseover="scoop_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
@@ -286,47 +379,47 @@
           </td>
         </tr>
 
-        <tr onmouseout="highlighter_stop()" onmouseover="highlighter_start()">
+        <tr onmouseout="saga_stop()" onmouseover="saga_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
-              <div class="two" id='highlighter_image'><video  width=100% height=100% muted autoplay loop>
-              <source src="images/person_necklace.mp4" type="video/mp4">
+              <div class="two" id='saga_image'><video  width=100% height=100% muted autoplay loop>
+              <source src="images/saga_evolution.mp4" type="video/mp4">
               Your browser does not support the video tag.
               </video></div>
-              <img src='images/person.png' width="160">
+              <img src='images/saga_evolution.png' width="160">
             </div>
             <script type="text/javascript">
-              function highlighter_start() {
-                document.getElementById('highlighter_image').style.opacity = "1";
+              function saga_start() {
+                document.getElementById('saga_image').style.opacity = "1";
               }
 
-              function highlighter_stop() {
-                document.getElementById('highlighter_image').style.opacity = "0";
+              function saga_stop() {
+                document.getElementById('saga_image').style.opacity = "0";
               }
-              highlighter_stop()
+              saga_stop()
             </script>
           </td>
           <td style="padding:20px;width:75%;vertical-align:middle">
-            <a href="https://threedle.github.io/3DHighlighter/">
-              <papertitle>3D Highlighter: Localizing Regions on 3D Shapes via Text Descriptions</papertitle>
+            <a href="https://stoliktomer.github.io/SAGA/">
+              <papertitle>SAGA: Spectral Geometric Adversarial Attack on 3D Meshes</papertitle>
             </a>
             <br>
-            <a href="https://ddecatur.github.io/">Dale Decatur</a>,
-            <strong>Itai Lang</strong>,
-            <a href="https://people.cs.uchicago.edu/~ranahanocka/">Rana Hanocka</a>
+            <a href="https://il.linkedin.com/in/tomer-stolik-3587b6181">Tomer Stolik*</a>,
+            <strong>Itai Lang*</strong>,
+            <a href="http://www.eng.tau.ac.il/~avidan/">Shai Avidan</a>
             <br>
-            <em>CVPR</em> 2023 <font color="red"><strong>(Highlight Presentation)</strong></font>
+            (*Equal contribution)
             <br>
-            <a href="https://threedle.github.io/3DHighlighter/">project page</a>
+            <em>ICCV</em> 2023
+            <br>
+            <a href="https://stoliktomer.github.io/SAGA/">project page</a>
             /
-            <a href="https://arxiv.org/abs/2212.11263">arXiv</a>
+            <a href="https://arxiv.org/abs/2211.13775">arXiv</a>
             /
-            <a href="https://www.youtube.com/watch?v=OKPySDDCdd0">video</a>
-            /
-            <a href="https://github.com/threedle/3DHighlighter">code</a>
+            <a href="https://github.com/StolikTomer/SAGA">code</a>
             <p></p>
             <p>
-              We synthesize colors over a 3D shape and use CLIP supervision to localize semantic regions using open vocabulary text prompts.
+              We apply a low frequency perturbation in the spectral shape domain to alter the reconstruction by a victim mesh autoencoder to a desired output geometry.
             </p>
           </td>
         </tr>
