@@ -58,6 +58,54 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+        <tr onmouseout="bsb_stop()" onmouseover="bsb_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='bsb_image'><video  width=100% height=100% muted autoplay loop>
+              <source src="images/bsb.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video></div>
+              <img src='images/bsb.png' width="160">
+            </div>
+            <script type="text/javascript">
+              function bsb_start() {
+                document.getElementById('bsb_image').style.opacity = "1";
+              }
+  
+              function bsb_stop() {
+                document.getElementById('bsb_image').style.opacity = "0";
+              }
+              bsb_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://threedle.github.io/bsb/">
+              <papertitle>Best Segmentation Buddies for Image-Shape Correspondence</papertitle>
+            </a>
+            <br>
+            <strong>Itai Lang*</strong>,
+            <a href="https://scholar.google.com/citations?user=i10yLmIAAAAJ&hl=zh-CN">Dongwei Lyu*</a>,
+            <a href="https://ddecatur.github.io/">Dale Decatur</a>,
+            <a href="https://people.cs.uchicago.edu/~ranahanocka/">Rana Hanocka</a>
+            <br>
+            (*Equal contribution)
+            <br>
+            <em>CVPR</em> 2026
+            <br>
+            <a href="https://threedle.github.io/bsb/">project page</a>
+            /
+            <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Lang_Best_Segmentation_Buddies_for_Image-Shape_Correspondence_CVPR_2026_paper.pdf">paper</a>
+            /
+            <a href="https://arxiv.org/abs/2605.18193">arXiv</a>
+            /
+            <a href="https://github.com/threedle/bsb">code</a>
+            <p></p>
+            <p>
+              Best Segmentation Buddies is a zero-shot segment-to-segment correspondence method between images in the wild and untextured 3D shapes.
+            </p>
+          </td>
+        </tr>
+
         <tr onmouseout="gis_stop()" onmouseover="gis_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
